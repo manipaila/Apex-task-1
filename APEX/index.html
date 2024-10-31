@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO FASHION WORLD</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1><i>Welcome To The Fashion World</i></h1>
+    <p>Explore the latest trends and timeless styles in fashion.</p>
+</header>
+
+<section>
+    <h2>Fashion Collections</h2>
+    <p>Discover curated collections designed for every occasion.</p>
+</section>
+
+<!-- Horizontal Gallery Container -->
+<div class="gallery-container">
+    <!-- Collection: Traditional Wear -->
+    <div class="gallery">
+        <h3>Traditional Wear</h3>
+        <img src="https://cdn.shopify.com/s/files/1/0560/2227/0115/files/wedding-pure-silk-saree-rs-21950-500x500.jpg" class="main-image" alt="Traditional Wear">
+        <button class="collection-button"><a href = "traditional.html">Explore Traditional Wear</a></button>
+    </div>
+
+    <!-- Collection: Party Wear -->
+    <div class="gallery">
+        <h3>Party Wear</h3>
+        <img src="https://www.sheideas.com/wp-content/uploads/2016/03/Awesome-Pageant-Formal-Party-Gowns-2016-17.jpg" class="main-image" alt="Party Wear">
+        <button class="collection-button"><a href = "party.html">Explore Party Wear</a></button>
+    
+    </div>
+
+    <!-- Collection: Casual Wear -->
+    <div class="gallery">                           
+        <h3>Casual Wear</h3>
+        <img src="https://i.pinimg.com/originals/6c/c1/47/6cc1473c4d82664ad1913bac68321643.jpg" class="main-image" alt="Casual Wear">
+        <button class="collection-button"><a href = "casual.html">Explore Casual Wear</a></button>
+    
+    </div>
+</div>
+<button class="order-button" onclick="confirmOrder()">Order Now</button>
+
+<script>
+    function confirmOrder() {
+        const userConfirmed = confirm("Are you sure to order?");
+        
+        if (userConfirmed) {
+            alert("Your order has been placed!");
+        } else {
+            alert("Order cancelled.");
+        }
+    }
+</script>
+</body>
+</html>
