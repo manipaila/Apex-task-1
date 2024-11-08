@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Museum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#exhibits" class="nav-link">Exhibits</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home" class="grid-item">
+            <h2>Welcome to the Science Museum</h2>
+            <p>Explore the wonders of science and technology, from ancient innovations to the frontiers of modern discovery. Join us in a journey through time and knowledge.</p>
+        </section>
+
+        <section id="exhibits" class="grid-item">
+            <h2>Exhibits</h2>
+            <div class="gallery-grid">
+                <img src="assets/s1.jpg" alt="Space Exploration">
+                <img src="assets/a1.jpg" alt="Ancient Tools">
+                <img src="assets/b3.jpg" alt="Botanical Garden">
+                <img src="assets/p1.jpg" alt="Physics Lab">
+                <img src="assets/e2.jpg" alt="Electricity Demo">
+                <img src="assets/d2.jpg" alt="Dinosaur Fossils">
+            </div>
+        </section>
+
+        <section id="services" class="grid-item">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Guided Tours</h3>
+                    <img src="assets/g2.jpg" alt="Guided Tours">
+                    <p>Join our expert-led tours for in-depth insights.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Workshops</h3>
+                    <img src="assets/w1.jpg" alt="Workshops">
+                    <p>Engaging workshops for all ages.</p>
+                </div>
+                <div class="service-card">
+                    <h3>3D Planetarium Shows</h3>
+                    <img src="assets/3d1.jpg" alt="3D Shows">
+                    <p>Experience the universe in our high-tech planetarium.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Interactive Labs</h3>
+                    <img src="assets/i1.jpg" alt="Interactive Labs">
+                    <p>Hands-on experiments and demonstrations.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Gift Shop</h3>
+                    <img src="assets/h1s.jpg" alt="Gift Shop">
+                    <p>Unique science-themed souvenirs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="grid-item">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="password" id="password" placeholder="Create Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="imageSection" class="grid-item" style="display:none;">
+            <h2>Submit an Image</h2>
+            <form id="imageForm">
+                <input type="url" id="imageUrl" placeholder="Paste Image URL" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="imagePreview" style="margin-top: 20px;">
+                <!-- The image will be displayed here after submission -->
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
