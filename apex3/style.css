@@ -1,0 +1,342 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color:white;
+    padding-bottom: 100px;
+}
+
+header {
+    background-color: white;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(161, 119, 119, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color:  #2d3748;;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px;
+}
+
+/* Grid Items */
+.grid-item {
+    background-color: #2d3748;;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    margin: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #004085;
+    transform: scale(0.98);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+}
+
+/* Section Styling */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Quiz Section */
+.quiz-container {
+    margin: 20px auto;
+    background-color: #2d3748;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#quizContainer {
+    display: block;
+}
+
+.quiz-container h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.quiz-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sec {
+    max-width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.options button {
+    background-color: #1a202c;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.options button:hover {
+    background-color: #343a40;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Joke Section */
+.joke-container {
+    margin: 30px auto;
+    background-color: #2d3748;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.joke-container h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#jokeEmoji {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+/* Weather Section */
+.api-container {
+    margin: 30px auto;
+    background-color: #2d3748;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.api-container h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.api-container input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    font-size: 1rem;
+    width: 200px;
+}
+
+#weather {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+/* Section Visibility */
+.section {
+    display: visible;
+}
+
+.section.active {
+    display: block;
+}
+/* Section styling */
+.gallery-section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Carousel container styling */
+.carousel-container {
+    margin: 30px auto;
+    background-color: #2d3748;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    background-color: #2d3748;
+    width: 100%;
+    height: 400px; /* Fixed height for the carousel */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for images inside the carousel */
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+
+/* Button styling */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+/* Gallery section title styling */
+.gallery-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .carousel-container {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    .carousel-btn {
+        font-size: 20px; /* Make buttons smaller */
+        padding: 8px; /* Reduce padding for smaller screens */
+    }
+
+    .gallery-section h2 {
+        font-size: 1.5em; /* Make heading smaller on mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-container {
+        height: 250px; /* Adjust height even further for very small screens */
+    }
+
+    .carousel-btn {
+        font-size: 18px; /* Make buttons even smaller */
+        padding: 5px; /* Reduce padding more */
+    }
+
+    .gallery-section h2 {
+        font-size: 1.2em; /* Reduce heading size more */
+    }
+}
