@@ -1,0 +1,395 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    padding: 10px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(63, 63, 70);
+    margin: 0;
+    padding-top: 60px;
+  }
+  
+  body, html {
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  body {
+    overflow-y: scroll;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #4CAF50;
+  }
+  
+  .hero {
+    background: url('assets/1.jfif') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    color: white;
+    text-align: left;
+    padding: 50px 40px;
+  }
+  
+  .profile-info {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 40px 40px;
+    margin-top: 300px;
+    margin-left: 300px;
+    max-width: 550px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .profile-info:hover {
+    transform: translateY(-10px);
+    opacity: 0.95;
+  }
+  
+  .profile-info h1 {
+    font-size: 2.8rem;
+    color: #F8F8F8;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  #about {
+    padding: 50px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  #about p {
+    font-size: 1em;
+    line-height: 1.8;
+    margin: 10px 0;
+    color: #111010;
+    background-color: #ddd;
+  }
+  
+  #about p:hover {
+    color: rgb(38, 93, 165);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  #about {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #about:hover {
+    transform: scale(1.03);
+  }
+  
+  section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #ddd;
+  }
+  
+  .skills-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    margin: 10px;
+    background-color: #faf6f6;
+    padding: 15px;
+    border-radius: 8px;
+    width: 220px;
+    text-align: center;
+    font-size: 1.2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .skills-list li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    background-color: #e0f7fa;
+  }
+  
+  .skills-list li:hover {
+    color: #00796b;
+  }
+  
+  #Internships {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #Internships h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .card {
+    background-color: #faf6f6;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (max-width: 768px) {
+    #connections {
+        padding: 20px;
+    }
+  
+    .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+  }
+  
+  .todolist-section {
+    margin: 100px auto;
+    max-width: 600px;
+    text-align: center;
+    background-color: #2b2b40;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .todolist-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+  }
+  
+  #taskInput {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  #taskInput:focus {
+    border-color: #6cff6c;
+    box-shadow: 0 0 5px #6cff6c;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  #taskList li {
+    background-color: #3c3c55;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #taskList li button {
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #taskList li button:hover {
+    background-color: #c0392b;
+  }
+  
+  .products-section {
+    margin: 100px auto;
+    padding: 20px;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .products-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+  }
+  
+  #filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  
+  #filters select {
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #filters select:hover {
+    border-color: #6cff6c;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .product-card {
+    width: 200px;
+    height: 320px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    font-size: 1.3rem;
+    color: #333;
+  }
+  
+  .product-card p {
+    font-size: 1.1rem;
+    color: #4CAF50;
+    margin-top: 10px;
+  }
+  
+  .product-card .rating {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #FFD700;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .product-list {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .product-card {
+      width: 100%;
+    }
+  }
+  
