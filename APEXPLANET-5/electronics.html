@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics - E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Electronics</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Available Electronics</h2>
+        <div id="electronicsGrid" class="grid">
+            <div class="card" data-name="Smartphone" data-price="699">
+                <img src="assets/e1.jpg" alt="Smartphone">
+                <p><strong>Smartphone</strong></p>
+                <p>Price: $699</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            
+            <div class="card" data-name="Laptop" data-price="1299">
+                <img src="assets/e2.webp" alt="Laptop">
+                <p><strong>Laptop</strong></p>
+                <p>Price: $1299</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            
+            <div class="card" data-name="Smartwatch" data-price="199">
+                <img src="assets/e3.jpg" alt="Smartwatch">
+                <p><strong>Smartwatch</strong></p>
+                <p>Price: $199</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            
+            <div class="card" data-name="Tablet" data-price="399">
+                <img src="assets/e4.webp" alt="Tablet">
+                <p><strong>Tablet</strong></p>
+                <p>Price: $399</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            
+            <div class="card" data-name="Headphones" data-price="99">
+                <img src="assets/e5.webp" alt="Headphones">
+                <p><strong>Headphones</strong></p>
+                <p>Price: $99</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            
+            <div class="card" data-name="Smart Speaker" data-price="129">
+                <img src="assets/e6.webp" alt="Smart Speaker">
+                <p><strong>Smart Speaker</strong></p>
+                <p>Price: $129</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            
+            <div class="card" data-name="Bluetooth Earbuds" data-price="59">
+                <img src="assets/e7.jpg" alt="Bluetooth Earbuds">
+                <p><strong>Bluetooth Earbuds</strong></p>
+                <p>Price: $59</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            
+            <div class="card" data-name="4K TV" data-price="799">
+                <img src="assets/e8.jfif" alt="4K TV">
+                <p><strong>4K TV</strong></p>
+                <p>Price: $799</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            
+            <div class="card" data-name="Camera" data-price="549">
+                <img src="assets/e9.jfif" alt="Camera">
+                <p><strong>Camera</strong></p>
+                <p>Price: $549</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            
+            <div class="card" data-name="Game Console" data-price="499">
+                <img src="assets/e10.webp" alt="Game Console">
+                <p><strong>Game Console</strong></p>
+                <p>Price: $499</p>
+                <button onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-Commerce Site</p>
+    </footer>
+</body>
+</html>
